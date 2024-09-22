@@ -4,23 +4,33 @@ getIdItem('cancel').addEventListener('click', () => {
 })
 // alert
 
+
 // log-in from
-getIdItem('sendBtn').addEventListener('click', function(e){
+getIdItem('sendBtn').addEventListener('click', function (e) {
     e.preventDefault();
     
-    const validNumber = '01973922729';
-    const validPin = 1237;
+    const userNumber = getInputNumberValue('phoneInfo'); // Fetch the phone number
+    const userPin = getInputNumberValue('pinInfo'); // Fetch the PIN
     
-    if (getIdItem('phoneInfo').value === validNumber && getInputNumberValue(pinInfo) === validPin) {
-        window.location.href="./home_page.html";
+    console.log("User Number:", userNumber);  // Check the user number
+    console.log("User Pin:", userPin);        // Check the user pin
+
+    const validNumber = 1;
+    const validPin = 1;
+
+    // Ensure comparison is between numbers
+    if (userNumber === validNumber && userPin === validPin) {
+        console.log("ok"); // Log success if both match
+    } else {
+        console.log("pooos"); // Log failure if they don't
     }
-    else{
-        getIdItem('alertDiv').classList.remove('hidden');
-        
-        getIdItem('phoneInfo').value=''
-        getIdItem('pinInfo').value=''
-    };
 });
+
+function getInputNumberValue(id) {
+    const getValue = document.getElementById(id).value;  // Correct value retrieval
+    return Number(getValue);  // Convert the value to a number
+}
+
 // log-in from
 
 

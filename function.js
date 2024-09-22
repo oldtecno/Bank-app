@@ -32,7 +32,10 @@ function getClassItem(clas) {
 
 // inputValueInNumber
 function getInputNumberValue(id) {
-    return Number(document.getElementById(id).vlaue);
+    
+    const getValue = document.getElementById(id).vlaue;
+    return Number(getValue);
+    
 };
 // inputValueInNumber
 
