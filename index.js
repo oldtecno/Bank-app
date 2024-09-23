@@ -16,8 +16,8 @@ getIdItem('sendBtn').addEventListener('click', function (e) {
 
     let userNumber = getInputNumberValue('phoneInfo');
     let userPin = getInputNumberValue('pinInfo');
-    const validNumber = '1';
-    const validPin = 1;
+    const validNumber = '01973922729';
+    const validPin = 123789;
 
     if (userNumber === Number(validNumber) && !isNaN(userNumber) && userPin === validPin && !isNaN(userPin)) {
         window.location.href="./home_page.html";
