@@ -33,8 +33,8 @@ function getClassItem(clas) {
 // inputValueInNumber
 function getInputNumberValue(id) {
     
-    const getValue = document.getElementById(id).vlaue;
-    return Number(getValue);
+   const inputValue = document.getElementById(id).value;
+   return Number(inputValue);
     
 };
 // inputValueInNumber
