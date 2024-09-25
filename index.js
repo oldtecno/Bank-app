@@ -5,12 +5,6 @@ getIdItem('cancel').addEventListener('click', () => {
 // alert
 
 
-
-
-
-
-
-
 getIdItem('sendBtn').addEventListener('click', function (e) {
     e.preventDefault();
 

@@ -2,6 +2,7 @@
 function bntEfect(id) {
      getIdItem(id).classList.add('border-2', 'border-blue-200', 'bg-gray-100');
 };
+
 function rembntEfect(id) {
      getIdItem(id).classList.remove( 'border-blue-200');
      getIdItem(id).classList.add('border-2', 'border-gray-200', 'bg-transparent');
